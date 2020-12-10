@@ -1,0 +1,6 @@
+pytest
+pytest-env
+pytest-pythonpath
+pytest-dotenv
+pytest-cov
+pytest-xdist

@@ -171,6 +171,28 @@ $ docker exec -it <container> flask create-db
 $ docker exec -it <container> flask install
 ```
 
+Testing
+-------------
+We use tox and pytest for testing. To test the platform install tox
+
+`pip3 install tox`
+
+then run tox with:
+
+`tox`
+
+to clean tox cache and re-run the tests use
+
+`tox -r`
+
+Alternatively you could run the tests using pytest after sourcing the env. First install all pytest-requirements using:
+
+`pip3 install -r pytest-requirements.txt`
+
+then run pytest with
+
+`BAYANAT_ENV=testing pytest`
+
 License
 -------------
 This system is distributed WITHOUT ANY WARRANTY under the GNU Affero General Public License v3.0. 
