@@ -163,5 +163,5 @@ class TestConfig(Config):
     ENV = 'test'
     DEBUG = False
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
-    'SQLALCHEMY_DATABASE_URI', 'postgresql:///test')
+    SQLALCHEMY_DATABASE_URI = 'postgresql:///test')
     #More configuration settings here
