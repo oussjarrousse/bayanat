@@ -146,8 +146,8 @@ class ProdConfig(Config):
     """Production configuration."""
     ENV = 'prod'
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql://user:pass@host/db'
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
+    SQLALCHEMY_DATABASE_URI = 'postgresql://user:pass@host/db'
 
 # override configurations for development
 class DevConfig(Config):
@@ -156,3 +156,12 @@ class DevConfig(Config):
     DEBUG = True
     DEBUG_TB_ENABLED = True
     CACHE_TYPE = 'simple'  # Can be "memcached", "redis", etc.
+
+# override configurations for testing
+class Test(Config):
+    """Testing configuration."""
+    ENV = 'test'
+    DEBUG = False
+    DEBUG_TB_ENABLED = False  # Disable Debug toolbar
+    #More configuration settings here
+    #SQLALCHEMY_DATABASE_URI = 'postgresql://user:pass@host/test_db'
