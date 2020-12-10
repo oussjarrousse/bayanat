@@ -163,5 +163,5 @@ class TestConfig(Config):
     ENV = 'test'
     DEBUG = False
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
     #More configuration settings here
-    #SQLALCHEMY_DATABASE_URI = 'postgresql://user:pass@host/test_db'
