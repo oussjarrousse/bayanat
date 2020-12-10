@@ -158,7 +158,7 @@ class DevConfig(Config):
     CACHE_TYPE = 'simple'  # Can be "memcached", "redis", etc.
 
 # override configurations for testing
-class Test(Config):
+class TestConfig(Config):
     """Testing configuration."""
     ENV = 'test'
     DEBUG = False
