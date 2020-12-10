@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name="bayanat",
-    version="0.1",
+    version="1.1.0",
     packages=["enferno"],
     license="",
     long_description=open("README.md").read(),
@@ -32,7 +32,7 @@ setup(
         'Faker==4.0.1',
         'Flask==1.1.1',
         'Flask-Babel==1.0.0',
-        'Flask-BabelEx==0.9.3'
+        'Flask-BabelEx==0.9.3',
         'flask-bouncer==0.3.0',
         'Flask-Caching==1.8.0',
         'Flask-DebugToolbar==0.10.1',
@@ -65,7 +65,7 @@ setup(
         'passlib==1.7.2',
         'pexpect==4.7.0',
         'pickleshare==0.7.5',
-        'Pillow==6.2.1',
+        'Pillow',
         'prompt-toolkit==2.0.10',
         'psycopg2-binary==2.8.4',
         'ptyprocess==0.6.0',

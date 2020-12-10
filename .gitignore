@@ -12,9 +12,10 @@ flask_session
 .mypy_cache/
 .history
 celerybeat-schedule.db
-
 # ignore the python egg-info folder after in case of installing the server as a package pip3 install -e .
 *.egg-info
+# ignore manifest
+MANIFEST
 # ignore .pytest_cache folder
 .pytest_cache
 # Pytest report
